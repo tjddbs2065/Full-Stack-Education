@@ -18,7 +18,7 @@ public class SwitchTest_02 {
 		case "고급 모델":
 			message = "썬루프 " + message;
 		case "기본 모델":
-			message = "자동차 " + message;
+			message = "자동차a " + message;
 			break;
 		default:
 			message = "해당하는 모델이 없습니다.";

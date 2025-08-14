@@ -8,7 +8,6 @@ public class StudentVO {
 	private String studentNumber;
 	private String name = "이름없음";
 	private char gender = 'M';
-	
 	// 메모리 할당과 동시에 초기화 생성자
 	// 생성자를 정의하지 않으면 VM이 매개인자 없는 생성자를 기본 제공
 	// overloading = 입력값의 다양성
@@ -26,6 +25,15 @@ public class StudentVO {
 	private void setStudentNumber(String studentNumber) {
 		this.studentNumber = studentNumber;
 	}
+	
+	// 한꺼번에 출력하고 싶다.
+	public void printAll(){
+		String msg = "학번: "+getStudentNumber() 
+				+" \n이름: "+ getName() 
+				+" \n성별: "+ getGender();
+		System.out.println(msg);
+	}
+	
 	public String getName() {
 		return name;
 	}

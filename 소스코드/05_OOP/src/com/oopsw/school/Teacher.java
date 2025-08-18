@@ -8,7 +8,6 @@ public class Teacher extends Person{
 		super(name, gender);
 		setTeacherNumber(teacherNumber);
 		setSubject(subject);
-		this.subject = subject;
 	}
 
 	public String getTeacherNumber() {

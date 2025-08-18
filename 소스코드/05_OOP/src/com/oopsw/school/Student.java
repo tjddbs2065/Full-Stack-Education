@@ -6,7 +6,6 @@ public class Student extends Person{ // 1
 	
 	public Student(String studentNumber, String name, char gender) {
 		super(name, gender);
-		System.out.println("[Student] »ı¼ºÀÚ");
 		this.studentNumber = studentNumber;
 	}
 

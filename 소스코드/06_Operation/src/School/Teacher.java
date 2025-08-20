@@ -1,6 +1,6 @@
-package com.oopsw.school;
+package School;
 
-public class Teacher extends Person{
+public class Teacher extends Person {
 	private String teacherNumber;
 
 	
@@ -10,14 +10,21 @@ public class Teacher extends Person{
 	}
 
 	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = super.hashCode();
+		result = prime * result + ((teacherNumber == null) ? 0 : teacherNumber.hashCode());
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object obj) {
-		if (this == obj) // Object일 때 
+		if (this == obj)
 			return true;
-		if (!super.equals(obj)) // 부모가 Object가 아닐 때
+		if (!super.equals(obj))
 			return false;
-		if (getClass() != obj.getClass()) // 
+		if (getClass() != obj.getClass())
 			return false;
-		
 		Teacher other = (Teacher) obj;
 		if (teacherNumber == null) {
 			if (other.teacherNumber != null)
@@ -29,12 +36,11 @@ public class Teacher extends Person{
 
 
 
-
 	@Override
 	public String toString() {
-		return super.toString() + "\n교사번호: " + teacherNumber;
+		return "교사번호: " + teacherNumber + "\n" + super.toString();
 	}
-
+	
 	public String getTeacherNumber() {
 		return teacherNumber;
 	}
@@ -42,7 +48,4 @@ public class Teacher extends Person{
 	public void setTeacherNumber(String teacherNumber) {
 		this.teacherNumber = teacherNumber;
 	}
-	
-	
-	
 }

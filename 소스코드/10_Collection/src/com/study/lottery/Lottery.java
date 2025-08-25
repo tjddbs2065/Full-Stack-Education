@@ -11,33 +11,37 @@ public class Lottery {
 	public static final int MAX_NUM = 45;
 	
 	public Lottery(){
-		numbers = new HashSet<>();
+		rollNumbers();
 	}
 	
 	public void rollNumbers(){
-		if(numbers != null)
-			numbers = new HashSet<>();
 		getNumbers();
 		getBonus();
 	}
 	
 	private void getNumbers(){
-		while(numbers.size() <= NUM_COUNT-1)
-			numbers.add((int)(Math.random()*45)+1);
+		numbers = new HashSet<>();
+		
+		while(numbers.size() < NUM_COUNT)
+			numbers.add(getRandomNumber());
 	}
 	private void getBonus(){
-		int bonus;
+		bonus = 0;
+		
 		while(true){
-			bonus = (int)(Math.random() * 45) + 1;
+			bonus = getRandomNumber();
 			if(!numbers.contains(bonus)){
-				this.bonus = bonus;
 				break;
 			}
 		}
 	}
-
+	static public int getRandomNumber(){
+		return (int)(Math.random() * MAX_NUM) + 1;
+	}
+	
 	@Override
 	public String toString() {
+//		rollNumbers();
 		return "Lottery =" + numbers + ", bonus=[" + bonus + "]";
 	}
 	

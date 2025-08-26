@@ -1,0 +1,6 @@
+select 
+	employee_id as "EmployeeID"
+	, salary as "Salary"
+	, nvl(commission_pct, 0) * salary as "Bonus"
+	, salary*(1+nvl(commission_pct, 0)) as "Total Salary" 
+from employees;

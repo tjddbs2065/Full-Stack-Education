@@ -1,0 +1,1 @@
+select nvl(manager_id, 0) ManagerID from employees;

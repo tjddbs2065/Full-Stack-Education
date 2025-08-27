@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "770c7b9ce2d566ee",
+    "id": "1af8a16cbf4b5c11",
     "type": "split",
     "children": [
       {
-        "id": "9d97c34bbb4869e1",
+        "id": "d0c3d2a09935ec91",
         "type": "tabs",
         "children": [
           {
-            "id": "f1efd34c0ca84723",
+            "id": "12ff02f3c1828266",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -23,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "78a4dd0dd8f506ca",
+    "id": "916dbd1db5a5af9c",
     "type": "split",
     "children": [
       {
-        "id": "44059150f2ad2b59",
+        "id": "340c5ed6d0427e54",
         "type": "tabs",
         "children": [
           {
-            "id": "d1c94695639690fd",
+            "id": "54084cbfa0ee8284",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +44,7 @@
             }
           },
           {
-            "id": "c53b36f622399de2",
+            "id": "a931eca5340e68c6",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -57,40 +57,39 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "검색"
             }
           },
           {
-            "id": "2d2f244c601cfdc0",
+            "id": "9315372d755cef6f",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "title": "북마크"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "1410f01a8af18ee5",
+    "id": "c1218a06ef03b87b",
     "type": "split",
     "children": [
       {
-        "id": "e2fe0b1015d20563",
+        "id": "fafaa5e82638c3f7",
         "type": "tabs",
         "children": [
           {
-            "id": "c5653d2dcfebe332",
+            "id": "2def380317439c3a",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "7. 객체지향.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,25 +99,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 7. 객체지향"
+              "title": "백링크"
             }
           },
           {
-            "id": "62cdc90a43ad8b72",
+            "id": "3c0012e42cb7ede8",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2-3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2-3"
+              "title": "나가는 링크"
             }
           },
           {
-            "id": "4fd17221accff9cd",
+            "id": "98f8375bfd0c050f",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -129,22 +127,21 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "태그"
             }
           },
           {
-            "id": "ec1599636292f2cf",
+            "id": "2ef563850d76b8f5",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "2-3.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2-3"
+              "title": "개요"
             }
           }
         ]
@@ -165,51 +162,6 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "f1efd34c0ca84723",
-  "lastOpenFiles": [
-    "DB/기본개념/정규화/정규화.md",
-    "DB/기본개념/정규화/제 1차 정규화.md",
-    "DB/기본개념/키/Foreign Key(외래키).md",
-    "DB/기본개념/키/Primary Key(기본키).md",
-    "DB/기본개념/정규화",
-    "DB/개념 목록.md",
-    "DB/기본개념/키/Candidate Key(후보키).md",
-    "DB/기본개념/DB 설계/ERD.md",
-    "DB/기본개념/DB 설계/DB 설계.md",
-    "DB/기본개념/SQL/서브쿼리",
-    "DB/기본개념/SQL/집계함수",
-    "DB/1일차/5. 추가내용.md",
-    "DB/기본개념/키",
-    "DB/2일차/수업내용.md",
-    "DB/1일차/수업내용.md",
-    "DB/1일차/DB와 DBMS.md",
-    "DB/1일차/RDB(관계형 데이터베이스).md",
-    "DB/기본개념/DB 설계/개념 모델링.md",
-    "DB/기본개념/DB 설계/물리 모델링.md",
-    "DB/기본개념/DB 설계/논리 모델링.md",
-    "DB/기본개념/DB 설계",
-    "DB/기본개념/DB.md",
-    "요구사항.md",
-    "Pasted image 20250828002704.png",
-    "Pasted image 20250828002337.png",
-    "Pasted image 20250828002010.png",
-    "1. JAVA 수업/12. 자바 9.md",
-    "1. JAVA 수업/11. 자바 8.md",
-    "1. JAVA 수업/10. 자바 7.md",
-    "1. JAVA 수업/9. 자바 6.md",
-    "1. JAVA 수업/8. 자바 5.md",
-    "1. JAVA 수업/7. 자바 4.md",
-    "1. JAVA 수업/6. 자바 3.md",
-    "1. JAVA 수업/5. 자바 2.md",
-    "DB/SQL/DML/SELECT",
-    "2. DB수업/SQL 기본 문법/DRL",
-    "DB/기본개념/SQL/TCL",
-    "DB/기본개념/SQL/DCL",
-    "DB/기본개념/SQL/DDL",
-    "Pasted image 20250820110551.png",
-    "Pasted image 20250819093440.png",
-    "Pasted image 20250819093329.png",
-    "Pasted image 20250812104958.png",
-    "Pasted image 20250812103821.png"
-  ]
+  "active": "54084cbfa0ee8284",
+  "lastOpenFiles": []
 }

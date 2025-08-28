@@ -5,20 +5,20 @@
 
 ##### 2. 관계형 DB 핵심 개념
 - Key
-	- [[Primary Key(기본키)]]: 한 행을 ==유일하게 식별==하는 값을 가진 속성
-	- [[Foreign Key(외래키)]]: 다른 테이블의 기본키를 참조하여 관계를 형성하는 속성
+	- Primary Key(기본키): 한 행을 ==유일하게 식별==하는 값을 가진 속성
+	- Foreign Key(외래키): 다른 테이블의 기본키를 참조하여 관계를 형성하는 속성
 		👉 다른 테이블의 Primary 키를 확인해 두 테이블의 연결한다.
 	- Candidate Key: Primary Key가 될 수 있는 후보 속성 
 - Relation
 	- 테이블 간의 연관성을 의미
-	- [[ERD]](Entity Relation Diagram): 정보공학 기반
+	- ERD(Entity Relation Diagram): 정보공학 기반
 		- 엔티티 간의 관계를 그림으로 표현
 		- 실선: 식별 관계 / 필수 관계
 		- 점선: 비식별 관계 / 선택 관계
 - Normalization
 	- ==중복 최소화, 무결성 보장==
 
-##### 3. [[SQL]](Structured Query Language)
+##### 3. SQL(Structured Query Language)
 관계형 DB는 데이터를 SQL이라는 언어를 사용해 관리·조작한다.
 - DRL(데이터 조회)
 	- ==SELECT(가장 많이 쓰임)==

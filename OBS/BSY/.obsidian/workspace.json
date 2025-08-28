@@ -4,17 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "9d97c34bbb4869e1",
+        "id": "fb3da3301d7b61f7",
         "type": "tabs",
         "children": [
           {
-            "id": "f1efd34c0ca84723",
+            "id": "ae8ee37646659248",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "5주차/8. 28.(목).md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "새 탭"
+              "title": "8. 28.(목)"
+            }
+          },
+          {
+            "id": "4a014d85bb2eb8ce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DB/기본개념/정규화/제 1차 정규화.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "제 1차 정규화"
             }
           }
         ]
@@ -165,46 +183,46 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "f1efd34c0ca84723",
+  "active": "ae8ee37646659248",
   "lastOpenFiles": [
-    "DB/기본개념/정규화/정규화.md",
     "DB/기본개념/정규화/제 1차 정규화.md",
-    "DB/기본개념/키/Foreign Key(외래키).md",
-    "DB/기본개념/키/Primary Key(기본키).md",
-    "DB/기본개념/정규화",
+    "5주차/8. 28.(목).md",
     "DB/개념 목록.md",
+    "DB/기본개념/정규화/제 3차 정규화.md",
+    "DB/기본개념/키/Foreign Key(외래키).md",
     "DB/기본개념/키/Candidate Key(후보키).md",
-    "DB/기본개념/DB 설계/ERD.md",
-    "DB/기본개념/DB 설계/DB 설계.md",
-    "DB/기본개념/SQL/서브쿼리",
-    "DB/기본개념/SQL/집계함수",
-    "DB/1일차/5. 추가내용.md",
-    "DB/기본개념/키",
-    "DB/2일차/수업내용.md",
-    "DB/1일차/수업내용.md",
-    "DB/1일차/DB와 DBMS.md",
-    "DB/1일차/RDB(관계형 데이터베이스).md",
+    "DB/기본개념/키/Primary Key(기본키).md",
     "DB/기본개념/DB 설계/개념 모델링.md",
-    "DB/기본개념/DB 설계/물리 모델링.md",
     "DB/기본개념/DB 설계/논리 모델링.md",
-    "DB/기본개념/DB 설계",
+    "DB/기본개념/DB 설계/물리 모델링.md",
+    "DB/기본개념/DB 설계/ERD.md",
+    "JAVA/기본개념/Garbage Collector.md",
+    "JAVA/기본개념/JVM.md",
+    "JAVA/Java.md",
+    "JAVA/기본개념/바이트 코드.md",
+    "JAVA/기본개념",
+    "DB/기본개념/정규화/제 2차 정규화.md",
+    "DB/기본개념/DB 설계/DB 설계.md",
+    "DB/2일차/수업내용.md",
+    "DB/기본개념/SQL/DML/SELECT/SELECT.md",
+    "DB/기본개념/SQL/DML/SELECT/JOIN.md",
+    "DB/기본개념/SQL/DML/SELECT/ORDER BY.md",
+    "DB/기본개념/SQL/DML/SELECT/DISTINCT.md",
+    "DB/기본개념/SQL/DML/SELECT/WHERE.md",
+    "DB/기본개념/정규화/정규화.md",
+    "DB/기본개념/SQL/DML/SELECT",
     "DB/기본개념/DB.md",
-    "요구사항.md",
+    "DB/1일차/수업내용.md",
+    "5주차",
+    "4주차",
+    "3주차",
     "Pasted image 20250828002704.png",
-    "Pasted image 20250828002337.png",
+    "리소스",
+    "리소스/Pasted image 20250828002337.png",
     "Pasted image 20250828002010.png",
-    "1. JAVA 수업/12. 자바 9.md",
-    "1. JAVA 수업/11. 자바 8.md",
-    "1. JAVA 수업/10. 자바 7.md",
-    "1. JAVA 수업/9. 자바 6.md",
-    "1. JAVA 수업/8. 자바 5.md",
-    "1. JAVA 수업/7. 자바 4.md",
-    "1. JAVA 수업/6. 자바 3.md",
-    "1. JAVA 수업/5. 자바 2.md",
-    "DB/SQL/DML/SELECT",
-    "2. DB수업/SQL 기본 문법/DRL",
+    "과거자료",
     "DB/기본개념/SQL/TCL",
-    "DB/기본개념/SQL/DCL",
+    "DB/기본개념/SQL/DML",
     "DB/기본개념/SQL/DDL",
     "Pasted image 20250820110551.png",
     "Pasted image 20250819093440.png",

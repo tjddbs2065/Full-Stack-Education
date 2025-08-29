@@ -1,41 +1,26 @@
 ##### 1. RDB(관계형 데이터베이스)란?
-데이터를 행과 열로 이루어진 테이블 형식으로 저장하는 데이터베이스로 ==중복 최소화, 무결성 보장, 관계 설정==과 같은 핵심 원칙을 가진다.
+데이터를 행과 열로 이루어진 ==테이블 형식(행과 열)==으로 저장하는 [[DB]]로 ==중복 최소화, 무결성 보장, 관계 설정==과 같은 핵심 원칙을 가진다.
 
 >데이터를 구조적이고 일관성 있는 방식으로 데이터를 관리하기 위함
 
 ##### 2. 관계형 DB 핵심 개념
 - Key
-	- Primary Key(기본키): 한 행을 ==유일하게 식별==하는 값을 가진 속성
-	- Foreign Key(외래키): 다른 테이블의 기본키를 참조하여 관계를 형성하는 속성
-		👉 다른 테이블의 Primary 키를 확인해 두 테이블의 연결한다.
-	- Candidate Key: Primary Key가 될 수 있는 후보 속성 
+	- [[Primary Key(기본키)]]: 한 행을 ==유일하게 식별==하는 값을 가진 속성
+	- [[Foreign Key(외래키)]]: 다른 테이블의 기본키를 참조하여 관계를 형성하는 속성
+	- [[Candidate Key(후보키)]]: Primary Key가 될 수 있는 후보 속성 
 - Relation
 	- 테이블 간의 연관성을 의미
-	- ERD(Entity Relation Diagram): 정보공학 기반
-		- 엔티티 간의 관계를 그림으로 표현
-		- 실선: 식별 관계 / 필수 관계
-		- 점선: 비식별 관계 / 선택 관계
+	- [[ERD]](Entity Relation Diagram): 정보공학 기반
 - Normalization
 	- ==중복 최소화, 무결성 보장==
 
 ##### 3. SQL(Structured Query Language)
 관계형 DB는 데이터를 SQL이라는 언어를 사용해 관리·조작한다.
-- DRL(데이터 조회)
-	- ==SELECT(가장 많이 쓰임)==
 - DDL: DB 구조 조작
-	- CREATE
-	- ALTER
-	- DROP
 - DML: 데이터 값 조작
-	- INSERT
-	- UPDATE
-	- DELETE
 - DCL: 권한 제어
-	- GRANT
-	- REVOKE
 - TCL: 트랜잭션 제어
-	- COMMIT
-	- ROLLBACK
+- 집계함수: 여러 데이터를 하나로 요약
 
 ##### 4. 관계형 DB의 장점과 한계
 - 장점

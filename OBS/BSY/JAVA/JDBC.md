@@ -1,37 +1,55 @@
-JDBC
-- 자바에서 데이터베이스에 접근하기 위한 표준 API
-- API 문서를 확인하면 java.sql 패키지의 interface의 수가 클래스의 수보다 많다.
-- API에는 SQL에 대한 표준 규격만 정해놓고, DB의 세부 구현은 벤더사에서 하게 하기 때문이다.
-- 실제 사용자는 JDBC API를 통해 DB를 사용한다.
+##### DB / 서비스 구조 관련
+- 여러 서비스가 하나의 DB를 공유하면 DB 모델링이 반드시 필요하다.
+- MSA 환경에서는 각 서비스가 자체 DB를 보유하는 경우가 많다.
+- 전통적으로 MyBatis가 가장 많이 사용되었으나, JPA는 좋은 기능에도 불구하고 활용 빈도가 낮았다.
+- MSA와 JPA가 결합되며 활용도가 높아졌다.
 
-DriverManager: VM에서 돌아가며, DB 드라이버가 있으면 이를 관리해주는 역할을 하는 클래스.
-- JDBC의 드라이버 로딩과 Connection 관리를 담당하는 관리자 역할을 한다.
-- `Class.forName("oracle.jdbc.driver.OracleDriver")`를 통해 수동으로 드라이버를 DriverManager에 등록한다.
-- `DriverManager.getConnection(url, user, password)`를 통해 url에 맞는 드라이버를 찾아서 DB와 연결된 `Connection` 객체를 반환한다.
-	- 반환 타입은 `java.sql.Connection` 인터페이스이지만, 실제 구현체는 드라이버 벤더사에서 제공한다.
-
-- JVM 시작 시 db 드라이버가 로드되고, 드라이버 구현체가 DriverManager에 자신을 등록한다.
-
-- `DriverManager.getConnection(url, user, password)`를 호출하면 DriverManager는 등록된 드라이버 목록을 순회하면서, url을 처리할 수 있는 드라이버를 찾는다.
-- 해당 드라이버가 db와 실제 연결을 맺고 `Connection` 객체를 반환한다.
-- `Class.forName()`: JVM의 메모리에 로드하면서 클래스의 static 블록을 실행한다.
-	- 드라이버의 `Driver` 클래스 안에는 DriverManager에 등록을 수행하는 static 코드가 들어있다.
-	- 때문에 순서대로, JVM이 클래스를 로딩, static 블록 실행, 드라이버 객체가 생성되어 `DriverManager`에 등록이 된다.
-
-##### 원리 흐름
-1. `Class.forName("드라이버클래스")` 실행 → JVM이 클래스 로딩.
-2. 드라이버 클래스의 **static 블록**이 실행 → `DriverManager.registerDriver()` 호출.
-3. `DriverManager`에 드라이버 인스턴스가 등록됨.
-4. 이후 `DriverManager.getConnection()`이 해당 드라이버를 찾아서 연결 수행
+##### JDBC
+- JDBC(Java Database Connectivity): Java와 DB를 연결하기 위한 API
+- 관련 패키지로는 `java.sql.*`가 있다.
+- 일반적으로 인터페이스보다 클래스가 많지만, `java.sql`은 인터페이스가 더 많다
+	- SQL 표준만 정의하고 구현은 DB 벤더사에서 제공
+	- 이는 DB마다 SQL이 달라 Java에서 구현부를 제공할 수 없기 때문
+	- 벤더사에(DB제공자)가 구현체(JDBC Driver)를 제공한다.
+- Driver Manager
+	- 여러 DB 드라이버를 관리하는 드라이버 관리자
+	- 클라이언트 요청에 맞은 드라이버를 찾아 연결을 생성
+	- OS의 드라이버 관리자와 유사한 역할을 한다.
+- SQL 입력과 결과
+	- 요청: `Statement`(또는 `PreparedStatement`)
+	- 결과: `ResultSet`
+- ※ 어떤 DB라도 동일한 방식으로 접근할 수 있게 하는 표준화된 API(프레임워크 성격)
 
 
-- 서버와 클라이언트 두 입장에서 input과 output은 서로의 입장에서 다르게 해석될 수 있다. 때문에 sql 요청은 statement, 결과는 resultset이라는 인터페이스로 처리를 한다.
+
+- 서버 연결 특징
+	- 연결 자체에 시간이 오래 걸리므로, 보통 연결을 일정 시간 유지한다.
+	- 단점: 단순 작업에도 서버 리소스를 오래 점유한다.
+- 드라이버 로딩
+	- DB 설치 시 함께 제공되는 JDBC 라이브러리(JAR 파일)이 필요하다.
+	- 프로젝트 환경에 JDBC 클래스 경로 지정 필수
+- SQL 인젝션 방지
+	- 입력값을 문자열로 직접 연결하지 말고 `?` 바인딩 문법을 사용해야 한다.
 
 
-##### 실습
-- jdbc: 어떤 db를 사용하더라도 공통된 환경을 제공하는 api(일종의 framework)이다.
-- 드라이버가 처음 로딩 되려면 라이브러리가 있어야 하지만 처음에는 ide나 java에서 이를 알지 못하기에, db를 설치하고 생성된 jdbc 라이브러리를 참조 시켜줘야 한다.
-- 실습에서는 외부 참조를 통해 ojdbc5.jar를 참조시켜 사용한다.
-	- jar: 여러개로 나뉜 자바 코드를 합쳐 놓은 것
-- 프로젝트 환경에 jdbc 클래스의 경로를 지정해주어야 한다.
-- 
+##### DriverManager의 역할
+- `DriverManager`는 DB드라이버들을 관리하고, Connection을 생성하는 관리자 클래스이다.
+- JVM 내에서 동작하며, JDBC 드라이버가 있으면 이를 관리한다.
+- 주요 책임
+	- JDBC 드라이버 로딩 관리
+	- 드라이버 등록 및 해제
+	- DB 연결 요청 처리(`getConnection`)
+
+##### 드라이버 로딩 과정
+- `Class.forName("oracle.jdbc.driver.OracleDriver")` 호출
+	- JVM이 해당 클래스를 메모리에 로드한다.
+	- 이때 클래스의 static 블록이 실행된다.
+- 드라이버 클래스의 static 블록 실행
+	- static 블록 안에는 보통 `DriverManager.registerDriver(new OracleDriver())` 같은 등록을 위한 코드가 들어있다.
+	- 즉, 드라이버 구현체가 자신을 `DriverManager`에 등록한다.
+
+##### Connection 생성 과정
+- 애플리케이션 코드에서 `DriverManager.getConnection(url, user, password)`호출
+- `DriverManager`는 등록된 드라이버 목록을 순회하며 각 드라이버에게 해당 url을 처리할 수 있는지 확인한다.
+- url을 처리할 수 있는 드라이버가 발견되면, 해당 드라이버가 실제 DB와 연결을 맺고 `Connection` 객체를 생성해 반환한다.
+- 반환 타입은 `java.sql.Connection` 인터페이스이지만, 실제 구현체는 DB 벤더사에서 제공한다.

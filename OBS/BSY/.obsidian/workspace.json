@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5주차/9. 2.(화).md",
+                "file": "5주차/9. 1.(월).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "9. 2.(화)"
+              "title": "9. 1.(월)"
             }
           }
         ]
@@ -172,8 +172,15 @@
   },
   "active": "2b65820cb5367a4e",
   "lastOpenFiles": [
+    "5주차/8. 29.(금).md",
+    "5주차/8. 28.(목).md",
+    "5주차/8. 27.(수).md",
     "연습문제.md",
+    "6주차/9. 3.(수).md",
+    "6주차/9. 4.(목).md",
     "5주차/9. 2.(화).md",
+    "6주차",
+    "5주차/무제",
     "1주차/UML Diagram.md",
     "DB/개념 목록.md",
     "수업 작성 자료(구)/1. 사전 지식.md",
@@ -194,20 +201,13 @@
     "5주차/9. 1.(월).md",
     "JAVA/학습/데이터 단위와 자료형.md",
     "JAVA/학습/패키지 구조와 네이밍 규칙.md",
-    "JAVA/학습/IO 시스템.md",
-    "JAVA/학습/Java.md",
-    "JAVA/수업 작성 자료 1차 정리/1. 사전지식.md",
     "JAVA/수업 작성 자료 1차 정리",
-    "JAVA/학습/주요 API와 컬렉션.md",
-    "JAVA/학습/예외 처리.md",
     "2주차",
     "1주차",
     "리소스/논리모델링_배성윤,심재용.pdf",
     "논리모델링_배성윤,심재용.pdf",
     "DB/기본개념/DB",
     "무제.base",
-    "DB/기본개념/SQL/DML/SELECT/JOIN",
-    "DB/기본개념/SQL/집계함수",
     "Pasted image 20250828002704.png",
     "리소스/Pasted image 20250828002337.png",
     "Pasted image 20250828002010.png",

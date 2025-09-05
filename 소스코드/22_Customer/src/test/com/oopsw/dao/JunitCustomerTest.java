@@ -1,5 +1,6 @@
 package test.com.oopsw.dao;
 
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
 import java.sql.Connection;
@@ -80,5 +81,6 @@ public class JunitCustomerTest {
 	@Test
 	public void getPointTest(){		
 		assertEquals(0, c.getPoint(47));
+		assertThat(10, is(c.getPoint(47)));
 	}
 }

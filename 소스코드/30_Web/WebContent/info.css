@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+h1{
+	text-align: center;
+	font-family: consolas;
+}
+div{
+	font-size: 30pt;
+	background-color: lightblue;
+	border-radius: 10px;
+}
+.title{font-size: 60pt;}
+.fontColor{color: green;}
+#idType{color:red;}
+#idTest{color:green;}

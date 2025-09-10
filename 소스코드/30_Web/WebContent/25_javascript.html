@@ -1,0 +1,55 @@
+<!-- 배성윤 -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- 
+<script>
+function calcTime(){
+	let time = document.getElementById("timeText").value;
+
+	let scheduleName = "";
+
+	if(time < 9 || time >= 24) 
+		scheduleName = "다시";
+	else if(time >= 9 && time <= 12) 
+		scheduleName = "오전 수업";
+	else if(time > 12 && time <= 14) 
+		scheduleName = "점심";
+	else if(time > 14 && time <= 18) 
+		scheduleName = "오후 수업";
+	else scheduleName = "자유 시간";
+	
+	document.getElementById("schedule").innerHTML = scheduleName;
+}
+</script>
+-->
+<script>
+	let inputTime = "10";
+	let message = "0 <= 시간 < 24까지";
+	
+	if(inputTime >= 0 && inputTime < 24){
+		if(inputTime >= 9 && inputTime < 12) {
+			message = "오전 수업";
+		}
+		else if(inputTime >= 12 && inputTime < 14) {
+			message = "점심";
+		}
+		else if(inputTime >= 14 && inputTime < 18){
+			message = "오후 수업";
+		}
+		else 
+			message = "자유 시간";
+	}
+	
+	document.write("<h1>" + message + "</h1>")
+</script>
+</head>
+<body>
+<input type="text" id="timeText" placeholder="시 입력"/>
+<input type="button" onclick="calcTime()" value="계산"/>
+
+<div id="schedule"> </div>
+
+</body>
+</html>

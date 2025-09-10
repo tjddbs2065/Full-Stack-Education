@@ -1,0 +1,27 @@
+<!-- 배성윤 -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		let startTimes = 3;
+		let endTimes = 9;
+		let message = "<div style = 'display:flex;'>";
+		
+		for(let i = 2; i <= 9; i++){
+			message += "<div>";
+			for(let j = startTimes; j <= endTimes; j++){
+				message += "<div>" + j + " x " + i + " = " + i*j + "</div>";
+			}
+			message += "</div>";
+		}
+		message += "</div>";
+		
+		document.write(message);
+	</script>
+
+</body>
+</html>

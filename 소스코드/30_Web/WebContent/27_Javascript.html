@@ -1,0 +1,45 @@
+<!-- ¹è¼ºÀ± -->
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+		class Score{
+			constructor(subject, score){
+				this.subject = subject;
+				this.score = score;
+			}
+			
+			toString(){
+				return (this.subject+" : "+this.score);
+			}
+		}
+
+		let scores = new Array();
+		scores[0] = new Score("±¹¾î", "90");
+		scores[1] = new Score("¼öÇÐ", "94");
+		scores[2] = new Score("¿µ¾î", "87");
+		
+		let averageScore = 0;
+		let totalScore = 0;
+		for(let i = 0; i < scores.length; i++){
+			averageScore += parseInt(scores[i].score);
+		}
+		totalScore = averageScore;
+		averageScore /= scores.length;
+		
+		document.write()
+		
+		let message = "";
+		for(let i = 0; i < scores.length; i++)
+			message += "<div>"+scores[i].toString()+"</div>";
+		
+		message += "<div>Æò±Õ : "+ averageScore + "</div>";
+		message += "<div>ÃÑÁ¡ : "+ totalScore + "</div>";
+		
+		document.write(message);
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="event.js">
+</script>
+
+</head>
+<body>
+	<a href ="http://www.naver.com"> 1. naver </a>
+	<br>
+	<a onclick ="actionNaver()"> 2. naver </a>
+	<br>
+	<a>3. naver</a>
+	<br>
+	<h1>네이버 이동</h1>
+	<script type="text/javascript">
+		let aList = document.querySelectorAll("a");
+		aList[2].onclick = function(){
+			actionNaver();
+		}
+		
+		document.querySelector("h1").onclick = function(){ 
+			actionNaver();
+		}
+
+		document.querySelector("h1").style = "color:red";
+		document.querySelector("h1").onmouseover = "cursor: wait";
+	</script>
+</body>
+</html>

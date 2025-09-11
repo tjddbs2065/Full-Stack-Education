@@ -1,0 +1,20 @@
+API
+- 브라우저 Web API: UI
+	- [[DOM(Document Object Model)]]
+		- Document
+	- BOM(Browser Object Model)
+		- Window
+	- 네트워크·스토리지
+- 자바스크립트 내장 API: 범용
+	- [[JavaScript Array]] 객체를 기본 제공
+	- Object
+	- String
+	- Number
+	- Math
+	- Date
+	- JSON
+	- Promise
+	- Map
+	- Set
+	- RegExp
+	- Error

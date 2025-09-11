@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script type="text/javascript">
+		function a1(){
+			console.log("a1", this);
+		}
+		var a2 = function(){
+			console.log("a2", this);
+		}
+		let a3 = function(){
+			console.log("a3", this);
+		}
+		
+		var Student = function(name, age){}
+		
+		a1();
+		a2();
+		a3();
+
+
+		new a1();
+		new a2();
+		new a3();
+		new Student();
+		
+	</script>
+</body>
+</html>

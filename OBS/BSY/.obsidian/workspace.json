@@ -13,12 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "무제.md",
+                "file": "수업내용/7주차/9. 12.(금).md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "무제"
+              "title": "9. 12.(금)"
             }
           }
         ]
@@ -94,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "7. 객체지향.md",
+                "file": "수업내용/7주차/9. 12.(금).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 7. 객체지향"
+              "title": "9. 12.(금) 의 백링크"
             }
           },
           {
@@ -172,8 +173,25 @@
   },
   "active": "c97c3347cc0f541b",
   "lastOpenFiles": [
+    "Pasted image 20250912161218.png",
+    "Pasted image 20250912155513.png",
+    "Pasted image 20250912151912.png",
+    "Pasted image 20250912150907.png",
+    "Pasted image 20250912150736.png",
+    "Pasted image 20250912123240.png",
+    "Pasted image 20250912121541.png",
+    "Pasted image 20250912121539.png",
+    "Pasted image 20250912121538.png",
+    "Pasted image 20250912121217.png",
+    "Pasted image 20250912121215.png",
+    "웹/Web Server와 WAS 차이.md",
+    "수업내용/7주차/9. 12.(금).md",
+    "기본태도.md",
+    "웹/JavaScript/JavaScript 패턴.md",
+    "웹/JavaScript/JavaScript.md",
+    "수업내용/7주차/9. 10.(수).md",
+    "수업내용/7주차/9. 11.(목).md",
     "JAVA/기본개념/바이트 코드.md",
-    "무제.md",
     "수업내용/4주차/8. 21.(목).md",
     "수업내용/4주차/8. 20.(수).md",
     "웹/Yahoo UI와 JavaScript.md",
@@ -190,33 +208,16 @@
     "수업내용/5주차/9. 2.(화).md",
     "수업내용/5주차/9. 1.(월).md",
     "수업내용/5주차/8. 28.(목).md",
-    "수업내용/7주차/9. 10.(수).md",
-    "수업내용/7주차/9. 11.(목).md",
-    "웹/JavaScript/JavaScript.md",
     "웹/JavaScript/JavaScript의 변화.md",
     "웹/JavaScript/JavaScript는 객체 기반 언어였다.md",
-    "웹/JavaScript/JavaScript Array.md",
-    "웹/JavaScript/JavaScript API.md",
-    "웹/JavaScript/JavaScript 문법.md",
     "웹/JavaScript",
-    "웹/무제.md",
-    "Pasted image 20250911095505.png",
-    "리소스/Pasted image 20250910182611.png",
-    "리소스/Pasted image 20250828002337.png",
     "리소스/논리모델링_배성윤,심재용.pdf",
-    "Pasted image 20250910182536.png",
     "수업내용/프로젝트/프로젝트1/KOSTA – 학생 관리.pdf",
     "수업내용/프로젝트/프로젝트1/KOSTA – 학생 관리.pptx.pdf",
     "수업내용/프로젝트/프로젝트1/KOSTA – 학생 관리.pptx",
     "수업내용/프로젝트/프로젝트1",
     "수업내용/프로젝트",
     "수업내용/2주차",
-    "수업내용/6주차/KOSTA – 학생 관리.pptx",
-    "Pasted image 20250828002704.png",
-    "Pasted image 20250828002010.png",
-    "Pasted image 20250820110551.png",
-    "Pasted image 20250819093440.png",
-    "Pasted image 20250819093329.png",
-    "Pasted image 20250812104958.png"
+    "수업내용/6주차/KOSTA – 학생 관리.pptx"
   ]
 }

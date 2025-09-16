@@ -1,6 +1,8 @@
 package com.oopsw.servlet;
 
 import java.io.IOException;
+
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -23,6 +25,10 @@ public class SignUpAction extends HttpServlet {
 			request.setAttribute("isPwEqual", "일치");
 			uri = "signupOk.jsp";
 		}
+		
+		ServletContext sContext = getServletContext();
+		sContext.setAttribute("test", "test1111");
+		
 		
 		request.setAttribute("isPwEqual", "불일치");
 		request.getRequestDispatcher(uri).forward(request, response);

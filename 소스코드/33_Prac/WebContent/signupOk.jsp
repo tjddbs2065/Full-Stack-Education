@@ -9,4 +9,5 @@ id는 <%= request.getParameter("id") %>입니다.<br>
 성별은 <%=request.getParameter("gender") %>입니다.
 <br>
 <br>
-
+<%=application.getAttribute("test")%>
+<%=session.getCreationTime()%>

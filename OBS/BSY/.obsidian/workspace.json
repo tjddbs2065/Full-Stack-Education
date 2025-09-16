@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "88855ff5f4f4b2ea",
+        "id": "bac7885a3b41f0ee",
         "type": "tabs",
         "children": [
           {
-            "id": "0edc333ce5e16ee4",
+            "id": "4f0d735780bd5f71",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "프로젝트/개인프로젝트1.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "새 탭"
+              "title": "개인프로젝트1"
             }
           }
         ]
@@ -166,17 +170,25 @@
       "markdown-importer:마크다운 형식 불러오기 열기": false
     }
   },
-  "active": "0edc333ce5e16ee4",
+  "active": "4f0d735780bd5f71",
   "lastOpenFiles": [
+    "프로젝트/프로젝트1.md",
+    "수업내용/7주차/9. 16.(화).md",
+    "프로젝트/개인프로젝트1.md",
+    "프로젝트/개인프로젝트2.md",
+    "수업내용/프로젝트/프로젝트1/KOSTA – 학생 관리.pdf",
+    "수업내용/7주차/9. 15.(월).md",
+    "수업내용/7주차/9. 12.(금).md",
+    "무제.md",
+    "프로젝트",
+    "무제 1.md",
     "수업 작성 자료(구)/1. 사전 지식.md",
     "응용 개념.md",
     "옵시디언 노트 예시.md",
-    "수업내용/7주차/9. 15.(월).md",
     "수업내용/6주차/9. 9.(화).md",
     "웹/HTML/ML(마크업 언어)의 역사.md",
     "웹/CSS(Cascading Style Sheet).md",
     "웹/인코딩의 변천사.md",
-    "수업내용/7주차/9. 12.(금).md",
     "수업내용/7주차/9. 10.(수).md",
     "수업내용/7주차/9. 11.(목).md",
     "웹/HTML/HTML(HyperText Markup Language).md",
@@ -197,22 +209,13 @@
     "웹/Web Server와 WAS 차이.md",
     "기본태도.md",
     "웹/JavaScript/JavaScript 패턴.md",
-    "웹/JavaScript/JavaScript.md",
-    "JAVA/기본개념/바이트 코드.md",
-    "수업내용/4주차/8. 21.(목).md",
-    "수업내용/4주차/8. 20.(수).md",
-    "웹/Yahoo UI와 JavaScript.md",
-    "웹/웹과 브라우저의 역사.md",
-    "웹/HTML/SGML.md",
     "웹/HTML",
     "웹/JavaScript",
     "리소스/논리모델링_배성윤,심재용.pdf",
-    "수업내용/프로젝트/프로젝트1/KOSTA – 학생 관리.pdf",
     "수업내용/프로젝트/프로젝트1/KOSTA – 학생 관리.pptx.pdf",
     "수업내용/프로젝트/프로젝트1/KOSTA – 학생 관리.pptx",
     "수업내용/프로젝트/프로젝트1",
     "수업내용/프로젝트",
-    "수업내용/2주차",
-    "수업내용/6주차/KOSTA – 학생 관리.pptx"
+    "수업내용/2주차"
   ]
 }

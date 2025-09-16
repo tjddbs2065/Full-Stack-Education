@@ -3,6 +3,7 @@
 
 <h1>sign up.jsp</h1>
 
+
 <form method="post" action="SignUpAction">
 	id <input type="text" name="id" required="required"><br>
 	pw <input type="password" name="pw"><br>

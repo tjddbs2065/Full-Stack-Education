@@ -48,7 +48,6 @@ public class UserServlet extends HttpServlet {
     	out.println("server message");
     	out.flush();
     	out.close();
-    	asd
 	}
 
 }

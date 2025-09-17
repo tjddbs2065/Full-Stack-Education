@@ -1,4 +1,4 @@
-- [ ] Credential Provider 분석
+- [x] Credential Provider 분석
 - [ ] Fat32 프로그램 생성
 - [ ] 정보처리기사 실기 시험
 - [ ] 개인 분석 설계 연습

@@ -13,6 +13,9 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/SignUp")
 public class SignUp extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		
+		
 		request.getRequestDispatcher("signup.jsp").forward(request, response);
 	}
 

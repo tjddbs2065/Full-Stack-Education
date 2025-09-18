@@ -14,6 +14,15 @@ public class ActionFactory {
 		
 		// ±¸ÇöºÎ
 		switch (cmd) {
+		case "logoutAction":
+			action = new LogoutAction();
+			break;
+		case "loginAction":
+			action = new LoginAction();
+			break;
+		case "addMemberAction":
+			action = new AddMemberAction();
+			break;
 		case "addMemberUI":
 			action = new AddMemberUIAction();
 			break;

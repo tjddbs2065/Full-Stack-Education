@@ -7,11 +7,11 @@
 <body>
 	<h1>회원가입</h1>
 	
-	<form>
-		id: <input><span>ok/중복확인</span><br>
-		pw: <input type="password"><br>
+	<form action="controller?cmd=addMemberAction" method="post">
+		id: <input name="memberId"><span>ok/중복확인</span><br>
+		pw: <input type="password" name="pw"><br>
 		pw 확인: <input type="password"><span>중복체크</span><br>
-		name: <input><br>
+		name: <input name="name"><br>
 		
 		<input type="submit" value="작성">
 		<input type="reset" value="취소">

@@ -18,7 +18,13 @@ import com.oopsw.action.ActionFactory;
 public class FrontController extends HttpServlet {
 	
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+//		try {
+//			System.out.println("대기 시작");
+//			Thread.sleep(5000);
+//			System.out.println("종료");
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
 		request.setCharacterEncoding("utf-8");
 		
 		// 모든 요청을 처리한다. // controller?cmd=addMemberUI
